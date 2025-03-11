@@ -23,7 +23,7 @@ export default function Experience() {
     >
       <SectionHeading>My Experience</SectionHeading>
       <VerticalTimeline 
-        lineColor=''
+        lineColor={theme === 'light' ? '#9CA3AF' : 'rgba(255, 255, 255, 0.2)'}
       >
         {experiencesData.map((item, index) => (
             
