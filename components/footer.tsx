@@ -17,7 +17,7 @@ export default function Footer() {
         <span 
           className='font-semibold'
         >
-          website
+          website{" "} 
         </span> 
         was built with React & Node.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
       </p>

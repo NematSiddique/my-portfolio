@@ -31,7 +31,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated College",
+    title: "College",
     location: "Bangalore, India",
     description:
       "I graduated with Bachelor's degree in Computer Science and Engineering",
@@ -42,7 +42,7 @@ export const experiencesData = [
     title: "Developer Intern",
     location: "Delhi, India",
     description:
-      "I worked as a Developer Intern for 3 months, gaining hands-on experience in development. During this time, I also upskilled to full-stack development.",
+      "I worked as a Developer Intern for 3 months, gaining hands-on experience in development. During this time, I also upskilled to full-stack development",
     icon: React.createElement(CgWorkAlt),
     date: "2024",
   },
@@ -56,14 +56,6 @@ export const projectsData = [
     tags: ["MERN", "Stripe", "Tailwind CSS", "Redis", "Postman"],
     imageUrl: ecommerceImg,
     url: "https://mern-ecommerce-jd74.onrender.com/",
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    url: "",
   },
 ] as const;
 

@@ -1,17 +1,23 @@
 "use client";
 
-import { projectsData } from "@/lib/data";
-import {motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { useRef } from "react";
+import { projectsData } from "@/lib/data";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, tags, imageUrl, url }: ProjectProps) {
+export default function Project({ 
+  title, 
+  description, 
+  tags, 
+  imageUrl, 
+  url, 
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
       target: ref,
-      offset: ["0 1", "1.33 1"]
+      offset: ["0 1", "1.33 1"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
@@ -21,7 +27,7 @@ export default function Project({ title, description, tags, imageUrl, url }: Pro
       ref={ref} 
       style={{ 
         scale: scaleProgress, 
-        opacity: opacityProgress 
+        opacity: opacityProgress, 
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >   
@@ -46,6 +52,7 @@ export default function Project({ title, description, tags, imageUrl, url }: Pro
               ))}
             </ul>
           </div>
+          
           <Image 
             src={imageUrl} 
             alt={title} 

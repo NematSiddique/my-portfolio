@@ -8,7 +8,7 @@ import {
   Container,
   Preview,
   Section,
-  Text
+  Text,
 } from '@react-email/components';
 import { Tailwind } from '@react-email/tailwind';
 
@@ -21,20 +21,24 @@ export default function ContactFormEmail({
   message,
   senderEmail,
 }: ContactFormEmailProps) {
-  return <Html>
-    <Head />
-    <Preview>New message from your portfolio</Preview>
-    <Tailwind>
-      <Body className='bg-gray-100 text-black'>
-        <Container>
-          <Section className='bg-white borderBlack my-10 px-10 py-4 rounded-md'>
-            <Heading className='leading-tight'>Your received the following message from the contact form</Heading>
-            <Text>{message}</Text>
-            <Hr />
-            <Text>Sender's email: {senderEmail}</Text>
-          </Section>
-        </Container>
-      </Body>
-    </Tailwind>
-  </Html>
+  return ( 
+    <Html>
+      <Head />
+      <Preview>New message from your portfolio</Preview>
+      <Tailwind>
+        <Body className='bg-gray-100 text-black'>
+          <Container>
+            <Section className='bg-white borderBlack my-10 px-10 py-4 rounded-md'>
+              <Heading className='leading-tight'>
+                You received the following message from the contact form
+              </Heading>
+              <Text>{message}</Text>
+              <Hr />
+              <Text>Sender's email: {senderEmail}</Text>
+            </Section>
+          </Container>
+        </Body>
+      </Tailwind>
+    </Html>
+  );
 };

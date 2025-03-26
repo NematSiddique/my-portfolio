@@ -27,18 +27,9 @@ export default function Intro() {
           className='relative'
         >
           <motion.div
-            initial={{ 
-              opacity: 0, 
-              scale: 0 
-            }}
-            animate={{ 
-              opacity: 1, 
-              scale: 1 
-            }}
-            transition={{ 
-              type: "tween", 
-              duration: 0.2 
-            }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: "tween", duration: 0.2 }}
           >
             <Image 
               src='https://i.pinimg.com/736x/91/6a/cb/916acb529042faf145a2fc8aeccc2454.jpg' 
@@ -52,16 +43,11 @@ export default function Intro() {
           </motion.div>
         </div>
       </div>
+      
       <motion.h1 
         className='mb-10 mt-4 px-5 text-2xl font-medium !leading-[1.5] sm:text-4xl'
-        initial={{ 
-          opacity: 0, 
-          y: 100, 
-        }}
-        animate={{ 
-          opacity: 1, 
-          y: 0, 
-        }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
       >
         <span className="text-sm sm:text-base">Hello, I'm<br /></span> {" "}
         <span className="font-bold text-4xl sm:text-5xl">Nemat Siddique<br /></span>{" "}
@@ -70,17 +56,9 @@ export default function Intro() {
 
       <motion.div 
         className='flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium'
-        initial={{ 
-          opacity: 0, 
-          y: 100, 
-        }}
-        animate={{ 
-          opacity: 1, 
-          y: 0, 
-        }}
-        transition={{ 
-          delay: 0.1, 
-        }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
       >
         <Link 
           href="#contact" 
@@ -91,9 +69,7 @@ export default function Intro() {
           }}
         >
           Contact me{" "} 
-          <BsArrowRight 
-            className='opacity-80 group-hover:translate-x-1 transition' 
-          />
+          <BsArrowRight className='opacity-80 group-hover:translate-x-1 transition' />
         </Link>
         
         <a 
@@ -102,9 +78,7 @@ export default function Intro() {
           download
         >
           Download CV{""} 
-          <HiDownload 
-            className='opacity-60 group-hover:translate-y-0.5 transition' 
-          /> 
+          <HiDownload className='opacity-60 group-hover:translate-y-0.5 transition' /> 
         </a>
           
         <a 

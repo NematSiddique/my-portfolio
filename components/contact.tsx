@@ -29,19 +29,16 @@ export default function Contact() {
         once: true, 
       }}
     >
-      <SectionHeading>Contact me here</SectionHeading>
-      <p 
-        className='text-gray-700 -mt-6 dark:text-white/80'
-      >
+      <SectionHeading>Get in touch</SectionHeading>
+      
+      <p className='text-gray-700 -mt-6 dark:text-white/80'>
         Via{" "}
-        <a 
-          className='underline' 
-          href='mailto:nemat.s3301@gmail.com'
-        >
+        <a className='underline' href='mailto:nemat.s3301@gmail.com'>
           nemat.s3301@gmail.com
         </a>{" "}
-        or through this form below.
+        or through this form below
       </p>
+      
       <form 
         className='mt-10 flex flex-col dark:text-black'
         action={async (formData) => {
@@ -64,9 +61,9 @@ export default function Contact() {
         <textarea 
           className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
           name='message'
+          placeholder='Your message' 
           required
           maxLength={5000}
-          placeholder='Your message' 
         />
         <SubmitButton />
       </form>
