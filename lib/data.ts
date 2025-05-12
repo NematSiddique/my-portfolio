@@ -3,6 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ecommerceImg from "@/public/ecommerce.png";
+import pmImg from "@/public/project_management.png";
+import cryptoImg from "@/public/tax_market_cap.png";
+import habitImg from "@/public/habit-at.png";
 
 export const links = [
   {
@@ -48,12 +51,43 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Project Management",
+    description:
+      "A full-stack project management app with task tracking, role-based access, and AWS-powered authentication.",
+    tags: [
+      "Next.js",
+      "Node.js",
+      "Redux Toolkit",
+      "PostgreSQL",
+      "Prisma",
+      "AWS",
+    ],
+    imageUrl: pmImg,
+    url: "https://github.com/NematSiddique/project-management.git/",
+  },
+  {
     title: "E-Commerce",
     description:
       "A full-stack e-commerce website for buying wearables with an admin dashboard, secure payments, and caching",
     tags: ["MERN", "Stripe", "Tailwind CSS", "Redis", "Postman"],
     imageUrl: ecommerceImg,
     url: "https://mern-ecommerce-jd74.onrender.com/",
+  },
+  {
+    title: "Tax Market Cap",
+    description:
+      "A real-time cryptocurrency market tracker with dynamic coin data, interactive charts, and detailed token stats.",
+    tags: ["React", "Redux Toolkit", "CoinGecko API", "Binance", "Recharts", "Tailwind CSS"],
+    imageUrl: cryptoImg,
+    url: "https://github.com/NematSiddique/tax_market_cap.git/",
+  },
+  {
+    title: "Habit-At",
+    description:
+      "A personal habit and analytics tracker with interactive charts, goal streaks, and progress dashboards.",
+    tags: ["Next.js", "TypeScript", "Recharts", "Tailwind CSS", "Framer Motion"],
+    imageUrl: habitImg,
+    url: "https://github.com/NematSiddique/Habit-At.git/",
   },
 ] as const;
 
