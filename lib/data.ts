@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ecommerceImg from "@/public/ecommerce.png";
 import pmImg from "@/public/project_management.png";
-import cryptoImg from "@/public/tax_market_cap.png";
+import cryptoImg from "@/public/crypto-market.png";
 import habitImg from "@/public/habit-at.png";
 
 export const links = [
@@ -71,15 +71,15 @@ export const projectsData = [
       "A full-stack e-commerce website for buying wearables with an admin dashboard, secure payments, and caching",
     tags: ["MERN", "Stripe", "Tailwind CSS", "Redis", "Postman"],
     imageUrl: ecommerceImg,
-    url: "https://mern-ecommerce-jd74.onrender.com/",
+    url: "https://github.com/NematSiddique/mern-ecommerce.git/",
   },
   {
-    title: "Tax Market Cap",
+    title: "CryptoMarket",
     description:
       "A real-time cryptocurrency market tracker with dynamic coin data, interactive charts, and detailed token stats.",
     tags: ["React", "Redux Toolkit", "CoinGecko API", "Binance", "Recharts", "Tailwind CSS"],
     imageUrl: cryptoImg,
-    url: "https://github.com/NematSiddique/tax_market_cap.git/",
+    url: "https://github.com/NematSiddique/crypto-market.git/",
   },
   {
     title: "Habit-At",
