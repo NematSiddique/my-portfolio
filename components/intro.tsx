@@ -51,7 +51,7 @@ export default function Intro() {
       >
         <span className="text-sm sm:text-base">Hello, I'm<br /></span> {" "}
         <span className="font-bold text-4xl sm:text-5xl">Nemat Siddique<br /></span>{" "}
-        <span className="font-bold text-lg sm:text-2xl">Full-Stack Developer</span>
+        <span className="text-lg sm:text-2xl">Full-Stack Developer</span>
       </motion.h1>
 
       <motion.div 

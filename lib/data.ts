@@ -35,7 +35,7 @@ export const experiencesData = [
     title: "College",
     location: "Bangalore, India",
     description:
-      "I graduated with Bachelor's degree in Computer Science and Engineering",
+      "I graduated with Bachelor's degree in Computer Science and Engineering.",
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
@@ -43,9 +43,17 @@ export const experiencesData = [
     title: "Developer Intern",
     location: "Delhi, India",
     description:
-      "I worked as a Developer Intern for 3 months, gaining hands-on experience in development. During this time, I also upskilled to full-stack development",
+      "Completed a 3-month internship at Makers' Muse, where I contributed to real-world development projects and enhanced my technical expertise. During this period, I expanded my skill set from frontend to full-stack development, gaining exposure to modern frameworks and best practices.",
     icon: React.createElement(CgWorkAlt),
     date: "2024",
+  },
+  {
+    title: "Developer Intern",
+    location: "Bangalore, India",
+    description:
+      "Currently interning at BDIPlus as a Developer Intern, working on full-stack projects that involve building scalable applications and solving practical business problems. This role is helping me strengthen my expertise in both frontend and backend technologies while collaborating within a professional development environment.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - Present",
   },
 ] as const;
 
@@ -96,18 +104,22 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "Java",
+  "Python",
+  "FastAPI",
+  "Flask",
+  "Django",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
+  "MySQL",
   "MongoDB",
   "Redux",
   "GraphQL",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
+  "Redis",
   "Framer Motion",
 ] as const;
