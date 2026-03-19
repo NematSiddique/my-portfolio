@@ -32,18 +32,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full Stack Developer Intern",
+    title: "SDE-1 | BDIPlus",
     location: "Bangalore, India",
     description:
-      "Currently interning at BDIPlus as a Developer Intern, contributing to scalable full-stack applications. Worked on automating dynamic file generation with AWS S3, building optimized CRM APIs with customizable filters, and refactoring SQL queries to improve response time by 93%. Developed responsive React UIs with reusable components, integrated Redux for efficient state management, and contributed to backend systems leveraging an orchestrator and Redis for secure, dynamic execution flows.",
+      "Optimized backend services and SQL queries using CTEs (20s → <2s latency, 93% improvement). Built asyncio-based APIs, developed microservices, and improved database schema reliability while mentoring new engineers.",
     icon: React.createElement(CgWorkAlt),
-    date: "2025 - Present",
+    date: "Jan 2026 - Present",
   },
   {
-    title: "Developer Intern",
+    title: "Full Stack Intern | BDIPlus",
+    location: "Bangalore, India",
+    description:
+      "Built internal tools and analytics dashboards. Automated AWS S3 file generation, introduced staging data storage, and worked with SSE for real-time data streaming.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jun 2025 - Dec 2025",
+  },
+  {
+    title: "Developer Intern | Makers' Muse",
     location: "Delhi, India",
     description:
-      "Completed a 3-month internship at Makers' Muse, where I contributed to real-world development projects and enhanced my technical expertise. During this period, I expanded my skill set from frontend to full-stack development, gaining exposure to modern frameworks and best practices.",
+      "Contributed to frontend development, UI improvements, and reusable web components while supporting inventory system integration.",
     icon: React.createElement(CgWorkAlt),
     date: "2024",
   },
@@ -100,34 +108,36 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Redux",
-  "Node.js",
-  "Express",
-  "Java",
-  "Python",
-  "FastAPI",
-  "Flask",
-  "PostgreSQL",
-  "MySQL",
-  "MongoDB",
-  "Redis",
-  "AWS S3",
-  "AWS Lambda",
-  "REST APIs",
-  "Git",
-  "CI/CD",
-  "Tailwind CSS",
-  "Framer Motion",
-  "Material UI",
-  "Prisma ORM",
-  "Cucumber",
-  "Postman",
-  "Docker",
-  "Agile/Scrum",
+  {
+    category: "Languages",
+    skills: ["Python", "Java", "JavaScript", "TypeScript", "SQL"],
+  },
+  {
+    category: "Backend",
+    skills: ["FastAPI", "Flask", "Node.js", "Express", "Asyncio"],
+  },
+  {
+    category: "Architecture & APIs",
+    skills: ["Microservices", "REST APIs"],
+  },
+  {
+    category: "Databases",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+  },
+  {
+    category: "Cloud & Infrastructure",
+    skills: ["AWS S3", "Docker"],
+  },
+  {
+    category: "Frontend",
+    skills: ["React", "Next.js", "Redux"],
+  },
+  {
+    category: "UI / Styling",
+    skills: ["Tailwind CSS", "Material UI"],
+  },
+  {
+    category: "Tools",
+    skills: ["Git", "Postman", "Jira", "CI/CD", "Agile/Scrum", "Prisma ORM"],
+  },
 ] as const;
